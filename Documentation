@@ -1,0 +1,32 @@
+node version:-  node -v 
+Must be > node 12
+Installation:-
+----------------------
+
+Step 1 - Install Expo CLI
+Run the following command in your terminal to install the command line interface (CLI) of Expo:
+
+npm install expo-cli --global
+
+Step 2 :- create project
+
+expo init my-new-project
+cd my-new-project
+expo start
+
+or npm start
+
+step 3:-Preview your project
+Open Expo Client on your device. Scan the QR code printed by expo start with Expo Client (Android) or Camera (iOS).
+You may have to wait a minute while your project bundles and loads for the first time.
+
+step 4- Simulator and emulator
+https://docs.expo.io/workflow/android-studio-emulator/
+->Open Android Studio 
+->Configure ->Avd Manager 
+->there Set up a virtual device by Pressing the "+ Create Virtual Device" button.
+
+step 5-Debugging on Simulator and emulator
+=>Ctrl +M =>Android (A tab will apppear in the browser (if you have started your project) after pressing debug js remotely)
+then Look for shortcut i.e Ctrl +Shift +J for developer tools
+=>Command +D =>IOS
