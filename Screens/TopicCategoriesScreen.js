@@ -32,7 +32,12 @@ class TopicCategoriesScreen extends Component {
                      key = {item.id}
                      style = {styles.container}
                      onPress = {() => {
-                        this.props.navigation.navigate({routeName: 'CssScreen'});
+                        this.props.navigation.navigate(
+                            {routeName: 'TopicDetail',
+                            params: {
+                                topicname: item.name
+                              }
+                        });
                     }}>                    
                      <Text style = {styles.text}>
                         {item.name}
