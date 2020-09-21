@@ -22,5 +22,19 @@ export const TOPICS = [
        'Pseudo-class not controlled by dynamic behavior',
        'Rules, styles, targeting specific text not possible'
   ]
+  ),
+  new Topic(
+    'Javascript',
+    'Javascript Interview Questions',
+    [	
+	  '1. What is JavaScript ?',
+    'Ans:-JavaScript is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScript is also an Object based Programming language.', 	  
+    '2.What are JavaScript Data Types?',
+    'Ans:-Following are the JavaScript Data types:',
+       'Number',
+       'String',
+       'Boolean',
+       'Object'
+  ]
   )
 ];
