@@ -30,3 +30,24 @@ step 5-Debugging on Simulator and emulator
 =>Ctrl +M =>Android (A tab will apppear in the browser (if you have started your project) after pressing debug js remotely)
 then Look for shortcut i.e Ctrl +Shift +J for developer tools
 =>Command +D =>IOS
+
+note:-used npm install --save expo-font(in this project)
+
+REact Native Navigation:-
+1)Install version 4:-
+npm install react-navigation
+
+2) Install all extra navigators that are required for this specific code snapshot:
+
+npm install --save react-navigation-stack
+
+npm install --save react-navigation-tabs
+
+npm install --save react-navigation-drawer
+
+(of course you can combine that all into one npm install command if you need all of them)
+
+3) Install all required dependencies
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
