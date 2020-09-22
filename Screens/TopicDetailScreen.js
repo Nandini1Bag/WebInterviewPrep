@@ -5,7 +5,8 @@ import { TOPICS } from '../data/dummy-data';
 const ListItem = props => {
     return (
       <View style={styles.listItem}>
-        <Text>{props.children}</Text>
+        <Text>{props.children.question}</Text>
+        <Text>{props.children.answer}</Text>
       </View>
     );
   };
@@ -19,8 +20,8 @@ const TopicDetailScreen = props => {
   return (
     <ScrollView>
        <Text style={styles.title}>{selectedTopic.title}</Text>
-       {selectedTopic.questions.map(question => (
-        <ListItem key={question}>{question}</ListItem>
+       {selectedTopic.questions.map((param,i) => (
+       <ListItem key={i}>{param}</ListItem>
       ))}
     </ScrollView>
   );
@@ -38,6 +39,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   listItem: {
+    backgroundColor: '#d9f9b1',
     marginVertical: 10,
     marginHorizontal: 20,
     borderColor: '#ccc',
