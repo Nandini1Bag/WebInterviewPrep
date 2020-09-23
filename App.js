@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#4f603c',
-    fontSize:'30px',
+    fontSize:30,
     fontWeight: "bold"
  }
 });

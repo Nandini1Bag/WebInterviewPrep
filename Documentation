@@ -16,9 +16,22 @@ expo start
 
 or npm start
 
-step 3:-Preview your project
-Open Expo Client on your device. Scan the QR code printed by expo start with Expo Client (Android) or Camera (iOS).
+step 3:-Running the App on a Real Device & Debugging:-
+------------------------------------------------------
+Don't forget, with Expo, you can easily run your app on real devices, too!
+
+Simply download the Expo app from the App Stores and scan the barcode the Expo DevTools 
+(that browser tab which opened when you ran npm start) show.
+
+On iOS devices, you don't scan the barcode with the Expo app but instead with your normal device 
+camera (simply point it at the barcode and you should be prompted whether you want to open that app in the Expo app).
+
+On Android devices, you find an integrated barcode scanner in the Expo app.
 You may have to wait a minute while your project bundles and loads for the first time.
+
+With the app running on a real device, you can debug it from there, too. Shake the device a little to bring up the developer menu.
+
+There, you can enable the remote debugger and the other features covered in this module.
 
 step 4- Simulator and emulator
 https://docs.expo.io/workflow/android-studio-emulator/
@@ -33,6 +46,23 @@ then Look for shortcut i.e Ctrl +Shift +J for developer tools
 
 note:-used npm install --save expo-font(in this project)
 
+-------------------------------------------------------------------------------
+
+Upgrading Your App:-
+----------------
+Here’s how to upgrade your app to Expo SDK 35.0.0 from 34.0.0.
+Close your Expo CLI server
+Run expo upgrade in your project directory (requires the latest version of expo-cli, you can update with npm i -g expo-cli).
+Make sure to check the breaking changes section of this post!
+Run expo start -c
+Update the Expo app on your phones from the App Store / Google Play. expo-cli will automatically update 
+your apps in simulators if you delete the existing apps, or you can run expo client:install:ios and expo client:install:android.
+If you built a standalone app previously, remember that you will need to create a new build in order 
+to update the SDK version. Run expo build:ios and/or expo build:android when you are ready to do a new build for submission to stores.
+
+
+
+-----------------------------------------------------------------------
 REact Native Navigation:-
 1)Install version 4:-
 npm install react-navigation

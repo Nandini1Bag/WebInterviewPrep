@@ -70,6 +70,6 @@ const styles = StyleSheet.create ({
    },
    text: {
       color: '#4f603c',
-      fontSize:'20px'
+      fontSize:20
    }
 })
