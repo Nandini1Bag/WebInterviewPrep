@@ -19,7 +19,7 @@ class TopicCategoriesScreen extends Component {
          },
          {
             id: 3,
-            name: 'React Js',
+            name: 'ReactJs',
          }
       ]
    }
@@ -40,7 +40,7 @@ class TopicCategoriesScreen extends Component {
                               }
                         });
                     }}>       
-                    <View  style={styles.textview}> 
+                    <View style={styles.topicview}> 
                      <Text style = {styles.text}>
                         {item.name}              
                      </Text>
@@ -79,10 +79,9 @@ const styles = StyleSheet.create ({
       fontSize:30,
       flex: 1
    },
-   textview:{
+   topicview:{
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start', 
     width: 300 
   }
 })
