@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class TopicCategoriesScreen extends Component {
    state = {
@@ -38,10 +39,14 @@ class TopicCategoriesScreen extends Component {
                                 topicname: item.name
                               }
                         });
-                    }}>                    
+                    }}>       
+                    <View  style={styles.textview}> 
                      <Text style = {styles.text}>
-                        {item.name}
+                        {item.name}              
                      </Text>
+                     <Icon name="chevron-right" size={25} >
+                     </Icon> 
+                     </View>             
                   </TouchableOpacity>
                ))
             }
@@ -70,6 +75,14 @@ const styles = StyleSheet.create ({
    },
    text: {
       color: '#4f603c',
-      fontSize:20
-   }
+      fontWeight: "bold",
+      fontSize:30,
+      flex: 1
+   },
+   textview:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start', 
+    width: 300 
+  }
 })
