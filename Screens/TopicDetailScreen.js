@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'open-sans-bold',
+    padding:8,
     fontSize: 22,
     textAlign: 'center'
   },
@@ -66,6 +67,8 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 20,
     borderColor: '#ccc',
+    borderRadius: 4,
+    shadowColor: '#000',
     borderWidth: 1,
     padding: 10
   }

@@ -55,7 +55,12 @@ export const TOPICS = [
       {
         question: '3. Why can’t browsers read JSX?',
         answer: 'Ans:-Browsers can only read JavaScript objects but JSX in not a regular JavaScript object. Thus to enable a browser to read JSX, first, we need to transform JSX file into a JavaScript object using JSX transformers like Babel and then pass it to the browser.'
+      },
+      {
+        question: '4. Explain the purpose of render() in React.',
+        answer: 'Ans:- Each React component must have a render() mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as <form>, <group>,<div> etc. This function must be kept pure i.e., it must return the same result each time it is invoked.'
       }
+      
     
   ]
   ),
