@@ -4,7 +4,7 @@ import TopicCategoriesScreen from '../Screens/TopicCategoriesScreen';
 import TopicDetailScreen from '../Screens/TopicDetailScreen';
 
 const TopicsNavigator = createStackNavigator({
-  Categories: TopicCategoriesScreen,
+  CATEGORY: TopicCategoriesScreen,
   TopicDetail: TopicDetailScreen
 });
 

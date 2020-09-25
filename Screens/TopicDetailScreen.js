@@ -1,19 +1,33 @@
-import React from 'react';
-import {View, ScrollView, Text, StyleSheet } from 'react-native';
+import React,{useState} from 'react';
+import {View, ScrollView, TouchableOpacity,Text, StyleSheet } from 'react-native';
 import { TOPICS } from '../data/dummy-data';
 
 const ListItem = props => {
+  const [isShowingAns, setIsShowingAns] = useState(false);
+
+  let ansText=null;
+  if (isShowingAns) {
+    ansText= (<Text>{props.children.answer}</Text>);
+  }
+
+  const toggleisShowingAns = ()=> {
+    setIsShowingAns(!isShowingAns);
+}
     return (
+      <TouchableOpacity onPress={()=>{toggleisShowingAns()}}>
       <View style={styles.listItem}>
-        <Text>{props.children.question}</Text>
-        <Text>{props.children.answer}</Text>
+        <Text style={styles.textques}>{props.children.question}</Text>
+        <View>
+        {ansText}
+        </View>
       </View>
+      </TouchableOpacity>
     );
   };
   
 
 const TopicDetailScreen = props => {
-
+ 
     const topicname = props.navigation.getParam('topicname');
     const selectedTopic = TOPICS.find(topic => topic.name === topicname);
 
@@ -37,6 +51,9 @@ const styles = StyleSheet.create({
     fontFamily: 'open-sans-bold',
     fontSize: 22,
     textAlign: 'center'
+  },
+  textques:{
+    paddingBottom:6
   },
   listItem: {
     backgroundColor: '#d9f9b1',
