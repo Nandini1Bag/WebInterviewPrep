@@ -7,7 +7,7 @@ const ListItem = props => {
 
   let ansText=null;
   if (isShowingAns) {
-    ansText= (<Text>{props.children.answer}</Text>);
+    ansText= (<Text style={styles.textans}>{props.children.answer}</Text>);
   }
 
   const toggleisShowingAns = ()=> {
@@ -53,7 +53,13 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   textques:{
-    paddingBottom:6
+    paddingBottom:6,
+    fontFamily: 'open-sans-bold',
+    fontSize: 15
+  },
+  textans:{
+    fontFamily: 'open-sans-bold',
+    fontSize: 15
   },
   listItem: {
     backgroundColor: '#d9f9b1',
