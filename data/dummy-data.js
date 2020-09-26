@@ -4,7 +4,7 @@ import Topic from '../models/topic';
 export const TOPICS = [
   new Topic(
     'Css',
-    'CSS Interview Questions',
+    'CSS',
     [	
       {
         question: '1. What is CSS ?',
@@ -23,7 +23,7 @@ export const TOPICS = [
   ),
   new Topic(
     'Html',
-    'Html Interview Questions',
+    'Html',
     [	
       {
         question: 'What is CSS ?',
@@ -42,7 +42,7 @@ export const TOPICS = [
   ),
   new Topic(
     'ReactJs',
-    'ReactJs Interview Questions',
+    'ReactJs',
     [	
       {
         question: '1. What is React ?',
@@ -66,7 +66,7 @@ export const TOPICS = [
   ),
   new Topic(
     'Javascript',
-    'Javascript Interview Questions',
+    'Javascript',
     [	
        {
         question: '1. What is JavaScript?',

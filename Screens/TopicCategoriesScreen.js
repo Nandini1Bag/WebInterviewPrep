@@ -34,7 +34,7 @@ class TopicCategoriesScreen extends Component {
                      style = {styles.container}
                      onPress = {() => {
                         this.props.navigation.navigate(
-                            {routeName: 'TopicDetail',
+                            {routeName: 'QUESTIONS',
                             params: {
                                 topicname: item.name
                               }

@@ -60,7 +60,10 @@ your apps in simulators if you delete the existing apps, or you can run expo cli
 If you built a standalone app previously, remember that you will need to create a new build in order 
 to update the SDK version. Run expo build:ios and/or expo build:android when you are ready to do a new build for submission to stores.
 
-
+------------------------------------------------------------------
+Show Adds:-
+https://dev.to/srajesh636/how-to-show-ads-in-react-native-lcj
+https://www.youtube.com/watch?v=0oEVkfvifxw
 
 -----------------------------------------------------------------------
 REact Native Navigation:-
