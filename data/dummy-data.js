@@ -11,13 +11,35 @@ export const TOPICS = [
         answer: 'Ans:-The full form of CSS is Cascading Style Sheets.It is a styling language which is simple enough for HTML elements.It is popular in web designing, and its application is common in XHTML also.', 	  
       }, 
       {
-        question: '2. What are the different variations of CSS ?',
-        answer: 'Ans:-The variations for CSS are: CSS 1 , CSS 2 , CSS 2.1 ,CSS 3 and CSS 4'
+        question: '2. What are the advantages of CSS ?',
+        answer: 'Ans:-Advantages are: 1)Bandwidth 2)Site-wide consistency 3)Page reformatting 4)Accessibility 5)Content separated from presentation'
       },
       {
         question: '3. What are the limitations of CSS ?',
-        answer: 'Ans:-Limitations are: No expressions,No column declaration,Pseudo-class not controlled by dynamic behavior,Rules, styles, targeting specific text not possible'
+        answer: 'Ans:-Limitations are: 1)No expressions 2)No column declaration 3)Pseudo-class not controlled by dynamic behavior 4)Rules, styles, targeting specific text not possible'
+      },
+      {
+        question: '4. Who maintains the CSS specifications ?',
+        answer: 'Ans:-World Wide Web Consortium maintains the CSS specifications.'
+      },
+      {
+        question: '5. In how many ways can a CSS be integrated as a web page ?',
+        answer: 'Ans:-CSS can be integrated in three ways: 1)Inline: Style attribute can be used to have CSS applied HTML elements. 2)Embedded: The Head element can have a Style element within which the code can be placed.3)Linked/ Imported: CSS can be placed in an external file and linked via link element.'
+      },
+      {
+        question: '6. What does CSS selector mean ?',
+        answer: 'Ans:-A string equivalent of HTML elements by which declarations or a set of it, is declared and is a link that can be referred for linking HTML and Style sheet is CSS selector.'
+      },
+      {
+        question: '7. Differentiate Class selector from ID selector ?',
+        answer: 'Ans:-While an overall block is given to class selector, ID selector prefers only a single element differing from other elements. In other words, ID are uniques while classes are not. Its possible that an element has both class and ID.'
+      },
+      {
+        question: '8. What is Pseudo-elements ?',
+        answer: 'Ans:-Pseudo-elements are used to add special effects to some selectors.  CSS in used to apply styles in HTML mark-up. In some cases when extra mark-up or styling is not possible for the document, then there is a feature available in CSS known as pseudo-elements. It will allow extra mark-up to the document without disturbing the actual document.'
       }
+     
+
     
   ]
   ),

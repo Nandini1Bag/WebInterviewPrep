@@ -5,9 +5,40 @@ import { TOPICS } from '../data/dummy-data';
 const ListItem = props => {
   const [isShowingAns, setIsShowingAns] = useState(false);
 
+  const Validate=()=> {
+    //Regex for Valid Characters i.e. Alphabets, Numbers and Space.
+    var regex = /^[A-Za-z0-9 ]+$/
+    var answer=props.children.answer;
+    let ansProcessedText=null;
+    //Validate TextBox value against the Regex.
+    var isValid = regex.test(answer);
+  if (!isValid) {   
+      const Arrans = answer.split(/([0-9]+)/) //"Contains Special Characters."
+       var rows = [];
+       let Ansnum='';
+     for (var i = 0, len = Arrans.length; i < len; i++) {
+         if (i===0){
+          rows.push(<Text key={i} style={styles.textans}>{Arrans[i]}</Text>);
+         };
+         if (Math.abs(i%2===1)){
+            Ansnum=Arrans[i]; //its odd
+         };
+         if(Math.abs(i%2!==1)&&(i!==0)){ 
+          rows.push(<Text key={i} style={styles.textans}>{Ansnum+Arrans[i]}</Text>);
+         }
+       };
+
+       ansProcessedText=(rows);
+    } else {
+       //Does not contain Special Characters.
+      ansProcessedText=(<Text style={styles.textans}>{props.children.answer}</Text>);
+    }
+    return ansProcessedText;
+}
+
   let ansText=null;
   if (isShowingAns) {
-    ansText= (<Text style={styles.textans}>{props.children.answer}</Text>);
+    ansText= Validate();
   }
 
   const toggleisShowingAns = ()=> {
