@@ -1,14 +1,19 @@
 {
   "expo": {
-    "name": "WebInterviewPrep",
-    "slug": "WebInterviewPrep",
+    "name": "WebDev Interview Questions",
+    "slug": "WebDev-Interview-Questions",
+    "privacy":"public",
+    "platforms":[
+     "ios",
+     "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/book.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#171717"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -19,8 +24,12 @@
     "ios": {
       "supportsTablet": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+     "adaptiveIcon":{
+       "foregroundImage":"./assets/places-adaptive.png",
+       "backgroundColor":"#171717"
+     }
+
     }
   }
 }
