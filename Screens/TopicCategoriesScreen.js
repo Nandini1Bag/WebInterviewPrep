@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet ,Platform} from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {
+   AdMobBanner
+ } from 'expo-ads-admob';
 
 class TopicCategoriesScreen extends Component {
+
+   bannerAdId=Platform.OS==='ios'?"ca-app-pub-8829581300632627/8692225736":"ca-app-pub-8829581300632627/1473061321";
+
    state = {
       topics: [
          {
@@ -24,9 +30,11 @@ class TopicCategoriesScreen extends Component {
       ]
    }
 
+
+
    render() {
       return (
-         <View>
+         <View  style = {styles.viewcontainer}>
             {
                this.state.topics.map((item, index) => (
                   <TouchableOpacity
@@ -50,6 +58,13 @@ class TopicCategoriesScreen extends Component {
                   </TouchableOpacity>
                ))
             }
+            <View style={styles.bannerview}>
+            <AdMobBanner
+             bannerSize="fullBanner"
+             adUnitID={this.bannerAdId} // Test ID, Replace with your-admob-unit-id
+             servePersonalizedAds={false} />
+            </View>
+         
          </View>
       )
    }
@@ -73,6 +88,9 @@ const styles = StyleSheet.create ({
       marginTop: 10,
       alignItems: 'center',
    },
+   viewcontainer: {
+      flex: 1
+    },
    text: {
       color: '#4f603c',
       fontWeight: "bold",
@@ -83,5 +101,10 @@ const styles = StyleSheet.create ({
     flexDirection: 'row',
     alignItems: 'center',
     width: 300 
-  }
+  },
+  bannerview:{
+   flex: 1,
+   justifyContent: 'flex-end',
+   marginBottom: 30
+ }
 })

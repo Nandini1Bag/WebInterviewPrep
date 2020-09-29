@@ -22,13 +22,19 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+       "googleMobileAdsAppId": "ca-app-pub-8829581300632627~3631470745" 
+     }
     },
     "android": {
      "adaptiveIcon":{
        "foregroundImage":"./assets/places-adaptive.png",
        "backgroundColor":"#171717"
-     }
+     },
+     "config": {
+      "googleMobileAdsAppId": "ca-app-pub-8829581300632627~8804756438" 
+    }
 
     }
   }
