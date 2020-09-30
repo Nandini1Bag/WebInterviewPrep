@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet ,Platform} from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {
-   AdMobBanner
- } from 'expo-ads-admob';
+import {AdMobBanner} from 'expo-ads-admob';
 
 class TopicCategoriesScreen extends Component {
 
@@ -105,6 +103,6 @@ const styles = StyleSheet.create ({
   bannerview:{
    flex: 1,
    justifyContent: 'flex-end',
-   marginBottom: 30
+   marginBottom: 33
  }
 })

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
-import {View, ScrollView, TouchableOpacity,Text, StyleSheet } from 'react-native';
+import {View, ScrollView, TouchableOpacity,Text, StyleSheet ,Platform} from 'react-native';
 import { TOPICS } from '../data/dummy-data';
+import {AdMobBanner} from 'expo-ads-admob';
 
 const ListItem = props => {
   const [isShowingAns, setIsShowingAns] = useState(false);
@@ -43,22 +44,38 @@ const ListItem = props => {
 
   const toggleisShowingAns = ()=> {
     setIsShowingAns(!isShowingAns);
-}
+   }
+
+   const bannerAdId=Platform.OS==='ios'?"ca-app-pub-8829581300632627/5912953490":"ca-app-pub-8829581300632627/9856067935";
+ 
+   const withBanner = (
+   <View style={styles.listItem}>
+   <AdMobBanner
+       bannerSize="fullBanner"
+       adUnitID={bannerAdId} // Test ID, Replace with your-admob-unit-id
+       servePersonalizedAds={false} />
+   </View>);
+
+   const withoutBanner = (<TouchableOpacity onPress={()=>{toggleisShowingAns()}}>
+   <View style={styles.listItem}>
+     <Text style={styles.textques}>{props.children.question}</Text>
+     <View>
+     {ansText}
+     </View>
+   </View>
+   </TouchableOpacity>);
+
     return (
-      <TouchableOpacity onPress={()=>{toggleisShowingAns()}}>
-      <View style={styles.listItem}>
-        <Text style={styles.textques}>{props.children.question}</Text>
-        <View>
-        {ansText}
-        </View>
+      <View>
+        {(props.count !== 0 && props.count%10 === 0) ? withBanner : withoutBanner}
       </View>
-      </TouchableOpacity>
+
     );
   };
   
 
 const TopicDetailScreen = props => {
- 
+
     const topicname = props.navigation.getParam('topicname');
     const selectedTopic = TOPICS.find(topic => topic.name === topicname);
 
@@ -66,8 +83,9 @@ const TopicDetailScreen = props => {
     <ScrollView>
        <Text style={styles.title}>{selectedTopic.title}</Text>
        {selectedTopic.questions.map((param,i) => (
-       <ListItem key={i}>{param}</ListItem>
-      ))}
+          <ListItem key={`question-item-${i}`} count={i}>{param}</ListItem>
+      ))
+      }
     </ScrollView>
   );
 };
@@ -102,6 +120,13 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     borderWidth: 1,
     padding: 10
+  },
+  bannerview:{
+    marginVertical: 10,
+    marginHorizontal: 20,
+    backgroundColor: 'white',
+    padding: 8,
+    height:70
   }
 });
 

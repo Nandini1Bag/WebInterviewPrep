@@ -94,16 +94,32 @@ AdMob:-
 see:-https://www.youtube.com/watch?v=aZOv_mxeu68
 
 
-Android:-
+=>Android:-
+-----------
 unitid:-
 ca-app-pub-8829581300632627/1473061321
 
 appid:-
 ca-app-pub-8829581300632627~8804756438
 
-IOS:-
+bannner_details:-
+appid:-
+ca-app-pub-8829581300632627~8804756438
+
+unitid:-
+ca-app-pub-8829581300632627/9856067935
+
+=>IOS:-
+-----
 appid:-
 ca-app-pub-8829581300632627~3631470745
 
 unitid:-
 ca-app-pub-8829581300632627/8692225736
+
+bannner_detail-ios:-
+appid:-
+ca-app-pub-8829581300632627~3631470745
+
+unitid:-
+ca-app-pub-8829581300632627/5912953490

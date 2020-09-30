@@ -92,6 +92,54 @@ export const TOPICS = [
       {
         question: '10. How do you keep list elements straight in an HTML file ?',
         answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '10. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '20. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '21. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
+      },
+      {
+        question: '22. How do you keep list elements straight in an HTML file ?',
+        answer: "Ans:-You can keep the list elements straight by using indents."
       }
     
   ]
