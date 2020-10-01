@@ -94,7 +94,7 @@ export const TOPICS = [
         answer: "Ans:-You can keep the list elements straight by using indents."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
+        question: '11. How do you keep list elements straight in an HTML file ?',
         answer: "Ans:-You can keep the list elements straight by using indents."
       },
       {
@@ -235,7 +235,47 @@ export const TOPICS = [
     {
     question: "10. Does JavaScript support automatic type conversion ?",
     answer:"Ans:-Yes JavaScript does support automatic type conversion, it is the common way of type conversion used by JavaScript developers. " 
-    }   
+    }, 
+    {
+    question: "11. Can you assign an anonymous function to a variable and pass it as an argument to another function ?",
+    answer:"Ans:-Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function. " 
+    }, 
+    {
+    question: "12. What are the scopes of a variable in JavaScript ?",
+    answer:"Ans:-The scope of a variable is the region of your program in which it is defined. JavaScript variable will have only two scopes. 1)Global Variables − A global variable has global scope which means it is visible everywhere in your JavaScript code. 2)Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function. " 
+    }, 
+    {
+    question: "13. What is Closure? Give an example.",
+    answer:"Ans:-Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope. It gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created. To use a closure, simply define a function inside another function and expose it. " 
+    }, 
+    {
+    question: "14. How does TypeOf Operator work ?",
+    answer:"Ans:- The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. It is a unary operator that is placed before its single operand, which can be of any type. Its value is a string indicating the data type of the operand. " 
+    }, 
+    {
+    question: "15. What is the difference between the operators ‘==‘ & ‘===‘ ?",
+    answer:"Ans:- The main difference between “==” and “===” operator is that formerly compares variable by making type correction e.g. if you compare a number with a string with numeric literal, == allows that, but === doesn’t allow that, because it not only checks the value but also type of two variable, if two variables are not of the same type “===” return false, while “==” return true. " 
+    }, 
+    {
+    question: "16. What is the difference between null & undefined ?",
+    answer:"Ans:- Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object. " 
+    }, 
+    {
+    question: "17. What is the difference between innerHTML & innerText ?",
+    answer:"Ans:- 1)innerHTML – It will process an HTML tag if found in a string  2)innerText – It will not process an HTML tag if found in a string " 
+    }, 
+    {
+    question: "18. What is an event bubbling in JavaScript ?",
+    answer:"Ans:- Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements. The execution starts from that event and goes to its parent element. Then the execution passes to its parent element and so on till the body element. " 
+    }, 
+    {
+    question: "19. What is the ‘Strict’ mode in JavaScript and how can it be enabled ?",
+    answer:"Ans:- Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible. You can enable strict mode by adding “use strict” at the beginning of a file, a program, or a function. " 
+    }, 
+    {
+    question: "20. What are escape characters in JavaScript ?",
+    answer:"Ans:- JavaScript escape characters enable you to write special characters without breaking your application. Escape characters (Backslash) is used when working with special characters like single quotes, double quotes, apostrophes and ampersands. Place backslash before the characters to make it display. " 
+    }      
 
   ]
   )

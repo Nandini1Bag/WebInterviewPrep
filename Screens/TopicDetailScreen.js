@@ -48,14 +48,6 @@ const ListItem = props => {
 
    const bannerAdId=Platform.OS==='ios'?"ca-app-pub-8829581300632627/5912953490":"ca-app-pub-8829581300632627/9856067935";
  
-   const withBanner = (
-   <View style={styles.listItem}>
-   <AdMobBanner
-       bannerSize="fullBanner"
-       adUnitID={bannerAdId} // Test ID, Replace with your-admob-unit-id
-       servePersonalizedAds={false} />
-   </View>);
-
    const withoutBanner = (<TouchableOpacity onPress={()=>{toggleisShowingAns()}}>
    <View style={styles.listItem}>
      <Text style={styles.textques}>{props.children.question}</Text>
@@ -65,9 +57,21 @@ const ListItem = props => {
    </View>
    </TouchableOpacity>);
 
+   const withBanner = (
+     <View>
+   <View style={styles.bannerview}>
+   <AdMobBanner
+       bannerSize="fullBanner"
+       adUnitID={bannerAdId} // Test ID, Replace with your-admob-unit-id
+       servePersonalizedAds={false} />
+   </View>
+   {withoutBanner}
+   </View>
+   );
+
     return (
       <View>
-        {(props.count !== 0 && props.count%10 === 0) ? withBanner : withoutBanner}
+        {(props.count !== 0 && props.count%9 === 0) ? withBanner : withoutBanner}
       </View>
 
     );
@@ -122,10 +126,9 @@ const styles = StyleSheet.create({
     padding: 10
   },
   bannerview:{
-    marginVertical: 10,
-    marginHorizontal: 20,
-    backgroundColor: 'white',
-    padding: 8,
+    paddingTop:5,
+    paddingBottom:5,
+    backgroundColor: '#d9f9b1',
     height:70
   }
 });
