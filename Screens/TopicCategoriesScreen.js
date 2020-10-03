@@ -58,7 +58,8 @@ class TopicCategoriesScreen extends Component {
             }
             <View style={styles.bannerview}>
             <AdMobBanner
-             bannerSize="fullBanner"
+             style={styles.Banner}
+             bannerSize="mediumRectangle"
              adUnitID={this.bannerAdId} // Test ID, Replace with your-admob-unit-id
              servePersonalizedAds={false} />
             </View>
@@ -104,5 +105,9 @@ const styles = StyleSheet.create ({
    flex: 1,
    justifyContent: 'flex-end',
    marginBottom: 33
- }
+ },
+ Banner: {
+  justifyContent:"center",
+  alignSelf:"center"
+}
 })

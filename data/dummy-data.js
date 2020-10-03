@@ -159,7 +159,7 @@ export const TOPICS = [
       },
       {
         question: '17. What is the SVG element ?',
-        answer: "Ans:-SVG is a followed XML format; it stands for Scalable Vector Graphics which is used to create vector graphics with the support for interactivity and animation.     SVG is resolution independent as it does not lose its quality when they are resized or zoomed."
+        answer: "Ans:-SVG is a followed XML format; it stands for Scalable Vector Graphics which is used to create vector graphics with the support for interactivity and animation.SVG is resolution independent as it does not lose its quality when they are resized or zoomed."
       },
       {
         question: '18. Explain about Canvas.',
