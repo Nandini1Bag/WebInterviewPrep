@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   textques:{
-    paddingBottom:6,
+    paddingBottom:3,
     fontFamily: 'open-sans-bold',
     fontSize: 15
   },

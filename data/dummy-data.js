@@ -45,6 +45,46 @@ export const TOPICS = [
       {
         question: '10. Can default property value be restored through CSS? If yes, how ?',
         answer: 'Ans:-In CSS, you cannot revert back to old values due to lack of default values. The property can be re- declared to get the default property.'
+      },
+      {
+        question: '11. What is CSS Box Model and what are its elements ?',
+        answer: 'Ans:-This box defines design and layout of elements of CSS. The elements are:1)Margin: the top most layer, the overall structure is shown 2)Border: the padding and content option with a border around it is shown.  Background color affects the border.3)Padding: Space is shown. Background colour affects the border.4)Content: Actual content is shown.'
+      },
+      {
+        question: '12. What is contextual selector ?',
+        answer: 'Ans:-Selector used to select special occurrences of an element is called contextual selector. A space separates the individual selectors. Only the last element of the pattern is addressed in this kind of selector. For e.g.: TD P TEXT {color: blue}'
+      },
+      {
+        question: '13. Compare Grouping and Nesting in CSS ?',
+        answer: 'Ans:-1)Grouping: Selectors can be grouped having the same values of property and the code be reduced.2)Nesting: Specifying a selector within a selector is called nesting.'
+      },
+      {
+        question: '14. How can the dimension be defined of an element ?',
+        answer: 'Ans:-Dimension properties can be defined by:Height,Max-height,Max-width,Min-height,Min-width,Width. '
+      },
+      {
+        question: '15. Define float property of CSS ?',
+        answer: 'Ans:-By float property, the image can be moved to the right or the left along with the text to be wrapped around it. Elements before this property is applied do not change their properties.'
+      },
+      {
+        question: '16. How does Z index function ?',
+        answer: 'Ans:-Overlapping may occur while using CSS for positioning HTML elements. Z index helps in specifying the overlapping element. It is a number which can be positive or negative, the default value being zero.'
+      },
+      {
+        question: '17. What is graceful degradation ?',
+        answer: 'Ans:-In case the component fails, it will continue to work properly in the presence of a graceful degradation. The latest browser application is used when a webpage is designed. As it is not available to everyone, there is a basic functionality, which enables its use to a wider audience. In case the image is unavailable for viewing, text is shown with the alt tag.'
+      },
+      {
+        question: '18. What is progressive enhancement ?',
+        answer: 'Ans:-It’s an alternative to graceful degradation, which concentrates on the matter of the web. The functionality is same, but it provides an extra edge to users having the latest bandwidth. It has been into prominent use recently with mobile internet connections expanding their base.'
+      },
+      {
+        question: '19. How can backward compatibility be designed in CSS ?',
+        answer: 'Ans:-HTML sheet methods is collaborated with CSS and used accordingly.'
+      },
+      {
+        question: '20. Are quotes mandatory in URL’s ?',
+        answer: 'Ans:-Quotes are optional in URL’s, and it can be single or double.'
       }
         
   ]
@@ -94,52 +134,44 @@ export const TOPICS = [
         answer: "Ans:-You can keep the list elements straight by using indents."
       },
       {
-        question: '11. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '11. What are inline elements and block-level elements in HTML ?',
+        answer: "Ans:-1)Block elements are the blocks that take the full available width and always start from a new line. It will stretch itself to the full available width of the available container width. Block-level elements are <div>, <p>, <img>, <section> and many more.  2)Inline elements are the elements that will only take the width that is required to fit into the container.For Example, take the flow of text on the page. When the line of the text takes the full width of the container it wraps itself into a new line and again goes in the same way.Whereas, the inline element will take only that much space or width that it is needed for them. Inline elements are <span>, <label>, <a>, <b> and many more."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '12. Can we change inline elements into block-level elements ?',
+        answer: "Ans:-Yes, we can change inline elements into block-level elements by adding display equal to block in its CSS tag. Writing it will change the inline elements into block elements and then inline elements will also take the full width of the container.For example:display: block;"
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '13. What are <br> tags in HTML ?',
+        answer: "Ans:-<br> tags are used to enter a new line into the HTML contents. These tags are generally used to separate two different lines of text between each other."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '14. Why Meta tags are used in HTML ?',
+        answer: "Ans:-Meta tags in HTML are used by the developer to tell the browser about the page description, author of the template, character set, keywords and many more.Meta tags are used for search engine optimization to tell the search engine about the page contents."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '15. Define iframe in HTML.',
+        answer: "Ans:-Iframe tag is written as <iframe>.An iframe is used to display different document content inside the different document content in a rectangular region in the browser. When different document content is embedded into a current HTML content, then it is known as an inline iframe."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '16. Why do we use the required attribute in HTML ?',
+        answer: "Ans:-The required attribute is used in HTML to make the field mandatory. It forces the user to fill that particular field to submit the form."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '17. What is the SVG element ?',
+        answer: "Ans:-SVG is a followed XML format; it stands for Scalable Vector Graphics which is used to create vector graphics with the support for interactivity and animation.     SVG is resolution independent as it does not lose its quality when they are resized or zoomed."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '18. Explain about Canvas.',
+        answer: "Ans:-Canvas is a pixel-based graphics and it is one of the new features of HTML5.It provides a space in the document where we can draw graphics by using JavaScript and it is resolution dependent, hence the quality will be affected when it’s zoomed or resized."
       },
       {
-        question: '10. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '19. Explain new form elements in HTML5.',
+        answer: "Ans:- The new form elements that were added into HTML5 are:1)Datalist – It’s used as a list of options for input control.2)Keygen – This tag defines a key-pair generator (Private/Public) field.3)Output – It’s used to show the result of a calculation."
       },
       {
-        question: '20. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
-      },
-      {
-        question: '21. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
-      },
-      {
-        question: '22. How do you keep list elements straight in an HTML file ?',
-        answer: "Ans:-You can keep the list elements straight by using indents."
+        question: '20. What is Quirks mode in HTML5 ?',
+        answer: "Ans:-If we do not include the <!DOCTYPE> element in our HTML page or Document, it will go to Quirks Mode. In this mode, the HTML element depends on the browser. Hence the content will be displayed according to the browser."
       }
     
   ]
@@ -187,6 +219,46 @@ export const TOPICS = [
       {
         question: '10. What do you understand by refs in React ?',
         answer: "Ans:- Refs is the short hand for References in React. It is an attribute which helps to store a reference to a particular React element or component, which will be returned by the components render configuration function. It is used to return references to a particular element or component returned by render(). They come in handy when we need DOM measurements or to add methods to the components."
+      },
+      {
+        question: '11. What is arrow function in React ?',
+        answer: "Ans:- Arrow functions are more of brief syntax for writing the function expression. They are also called ‘fat arrow‘ (=>) the functions. These functions allow to bind the context of the components properly since in ES6 auto binding is not available by default. Arrow functions are mostly useful while working with the higher order functions."
+      },
+      {
+        question: '12. List some of the cases when you should use Refs.',
+        answer: "Ans:- Following are the cases when refs should be used: 1)When you need to manage focus, select text or media playback 2)To trigger imperative animations 3)Integrate with third-party DOM libraries "
+      },
+      {
+        question: '13. What are Higher Order Components(HOC) ?',
+        answer: "Ans:- Higher Order Component is an advanced way of reusing the component logic. Basically, it’s a pattern that is derived from React’s compositional nature. HOC are custom components which wrap another component within it. They can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components. You can say that HOC are ‘pure’ components. "
+      },
+      {
+        question: '14. What are Pure Components ?',
+        answer: "Ans:- Pure components are the simplest and fastest components which can be written. They can replace any component which only has a render(). These components enhance the simplicity of the code and performance of the application. "
+      },
+      {
+        question: '15. What is the significance of keys in React ?',
+        answer: "Ans:- Keys are used for identifying unique Virtual DOM Elements with their corresponding data driving the UI. They help React to optimize the rendering by recycling all the existing elements in the DOM. These keys must be a unique number or string, using which React just reorders the elements instead of re-rendering them. This leads to increase in application’s performance. "
+      },
+      {
+        question: '16. How are forms created in React ?',
+        answer: "Ans:- React forms are similar to HTML forms. But in React, the state is contained in the state property of the component and is only updated via setState(). Thus the elements can’t directly update their state and their submission is handled by a JavaScript function. This function has full access to the data that is entered by the user into a form. "
+      },
+      {
+        question: '17. What are React Hooks ?',
+        answer: "Ans:- Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. With Hooks, you can extract stateful logic from a component so it can be tested independently and reused. Hooks allow you to reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community. "
+      },
+      {
+        question: '18. What are advantages of using React Hooks ?',
+        answer: "Ans:- Primarily, hooks in general enable the extraction and reuse of stateful logic that is common across multiple components without the burden of higher order components or render props. Hooks allow to easily manipulate the state of our functional component without needing to convert them into class components.Hooks don’t work inside classes (because they let you use React without classes). By using them, we can totally avoid using lifecycle methods, such as componentDidMount, componentDidUpdate, componentWillUnmount. Instead, we will use built-in hooks like useEffect . "
+      },
+      {
+        question: '19. What is prop drilling and how can you avoid it ?',
+        answer: "Ans:- When building a React application, there is often the need for a deeply nested component to use data provided by another component that is much higher in the hierarchy. The simplest approach is to simply pass a prop from each component to the next in the hierarchy from the source component to the deeply nested component. This is called prop drilling.        The primary disadvantage of prop drilling is that components that should not otherwise be aware of the data become unnecessarily complicated and are harder to maintain.To avoid prop drilling, a common approach is to use React context. This allows a Provider component that supplies data to be defined, and allows nested components to consume context data via either a Consumer component or a useContext hook. "
+      },
+      {
+        question: '20. Why should not we update the state directly ?',
+        answer: "Ans:- If you try to update state directly then it won’t re-render the component.Instead use setState() method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.Note: The only place you can assign the state is constructor. "
       }
       
     
