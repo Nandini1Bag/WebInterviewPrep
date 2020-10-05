@@ -61,7 +61,8 @@ const ListItem = props => {
      <View>
    <View style={styles.bannerview}>
    <AdMobBanner
-       bannerSize="fullBanner"
+       style={styles.Banner}
+       bannerSize="smartBannerPortrait"
        adUnitID={bannerAdId} // Test ID, Replace with your-admob-unit-id
        servePersonalizedAds={false} />
    </View>
@@ -126,11 +127,21 @@ const styles = StyleSheet.create({
     padding: 10
   },
   bannerview:{
-    paddingTop:5,
-    paddingBottom:5,
+    marginVertical: 10,
+    height:90,
     backgroundColor: '#d9f9b1',
-    height:70
-  }
+    justifyContent: 'center',
+    alignItems: "center",
+    borderColor: '#ccc',
+    borderWidth: 1,
+    flex: 1
+  },
+ Banner: {
+  width: "100%", 
+  justifyContent: 'center',
+  alignSelf:"center"
+}
+  
 });
 
 export default TopicDetailScreen;

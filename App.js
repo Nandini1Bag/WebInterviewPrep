@@ -3,7 +3,7 @@ import { StyleSheet} from 'react-native';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 import TopicsNavigator from './Navigation/TopicsNavigator';
-
+console.reportErrorsAsExceptions = false;
 
 const fetchFonts = () => {
   return Font.loadAsync({

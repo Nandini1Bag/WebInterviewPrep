@@ -73,7 +73,6 @@ export default TopicCategoriesScreen
 const styles = StyleSheet.create ({
    container: {
       padding: 10,
-      marginTop: 3,
       backgroundColor: '#d9f9b1',
       borderWidth: 1,
       borderRadius: 2,
@@ -88,7 +87,8 @@ const styles = StyleSheet.create ({
       alignItems: 'center',
    },
    viewcontainer: {
-      flex: 1
+      flex: 1,
+      padding:5
     },
    text: {
       color: '#4f603c',
@@ -104,7 +104,7 @@ const styles = StyleSheet.create ({
   bannerview:{
    flex: 1,
    justifyContent: 'flex-end',
-   marginBottom: 33
+   marginBottom: 53
  },
  Banner: {
   justifyContent:"center",
