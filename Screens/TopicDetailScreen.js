@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   bannerview: {
     marginVertical: 10,
-    height: 90,
+    height: (Platform.OS === 'ios') ? 50 : 90,
     backgroundColor: "#d9f9b1",
     justifyContent: "center",
     alignItems: "center",
