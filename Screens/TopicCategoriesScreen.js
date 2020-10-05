@@ -88,10 +88,11 @@ const styles = StyleSheet.create ({
    },
    viewcontainer: {
       flex: 1,
-      padding:5
+      padding:5,
+      backgroundColor: '#000'
     },
    text: {
-      color: '#4f603c',
+      color: '#000',
       fontWeight: "bold",
       fontSize:30,
       flex: 1

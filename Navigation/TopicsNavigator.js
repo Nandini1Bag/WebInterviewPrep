@@ -11,9 +11,22 @@ const TopicsNavigator = createStackNavigator({
     navigationOptions: {
         title: 'CATEGORY',
         headerLeft: null,
+        headerTitleStyle: {
+          fontWeight: "bold",    
+          fontSize: 25
+        },
     },
 },
-  QUESTIONS: TopicDetailScreen
+  QUESTIONS: {
+    screen: TopicDetailScreen, 
+    navigationOptions: {
+        title: 'INTERVIEW QUESTIONS',
+        headerTitleStyle: {
+          fontWeight: "bold",    
+          fontSize: 25
+        },
+    },
+},
 });
 
 export default createAppContainer(TopicsNavigator);

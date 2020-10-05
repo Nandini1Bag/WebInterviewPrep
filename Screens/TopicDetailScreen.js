@@ -85,7 +85,7 @@ const TopicDetailScreen = props => {
     const selectedTopic = TOPICS.find(topic => topic.name === topicname);
 
   return (
-    <ScrollView>
+    <ScrollView style={styles.screen}>
        <Text style={styles.title}>{selectedTopic.title}</Text>
        {selectedTopic.questions.map((param,i) => (
           <ListItem key={`question-item-${i}`} count={i}>{param}</ListItem>
@@ -98,23 +98,28 @@ const TopicDetailScreen = props => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: '#000'
   },
   title: {
     fontFamily: 'open-sans-bold',
-    padding:8,
-    fontSize: 22,
-    textAlign: 'center'
+    padding:15,
+    fontSize: 24,
+    letterSpacing: 5,
+    textDecorationLine: 'underline',
+    textShadowColor: '#D50000',
+    textShadowRadius: 4,
+    textShadowOffset: {width: 1, height: 1},
+    textAlign: 'center',
+    color: '#d9f9b1',
   },
   textques:{
     paddingBottom:3,
     fontFamily: 'open-sans-bold',
-    fontSize: 15
+    fontSize: 18
   },
   textans:{
     fontFamily: 'open-sans-bold',
-    fontSize: 15
+    fontSize: 18
   },
   listItem: {
     backgroundColor: '#d9f9b1',
