@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import {
   View,
   ScrollView,
@@ -9,9 +9,19 @@ import {
 } from "react-native";
 import { TOPICS } from "../data/dummy-data";
 import { AdMobBanner } from "expo-ads-admob";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const ListItem = (props) => {
   const [isShowingAns, setIsShowingAns] = useState(false);
+  const [iconName, seticonName] = useState('chevron-down');
+
+  useEffect(() => {
+    if(isShowingAns){
+     seticonName('chevron-up');
+    }else{
+      seticonName('chevron-down'); 
+    }
+  });
 
   const Validate = () => {
     //Regex for Valid Characters i.e. Alphabets, Numbers and Space.
@@ -75,7 +85,10 @@ const ListItem = (props) => {
       }}
     >
       <View style={styles.listItem}>
+        <View style={styles.quesview}>
         <Text style={styles.textques}>{props.children.question}</Text>
+        <Icon name={iconName} size={25}></Icon>
+        </View>
         <View>{ansText}</View>
       </View>
     </TouchableOpacity>
@@ -136,13 +149,23 @@ const styles = StyleSheet.create({
     color: "#d9f9b1",
   },
   textques: {
-    paddingBottom: 3,
+    paddingBottom: 5,
+    paddingRight: 6,
+    flexDirection: 'column',
+    flex: 1,
     fontFamily: "open-sans-bold",
     fontSize: 18,
   },
   textans: {
+    paddingRight: 9,
+    flexDirection: 'column',
+    flex: 1,
     fontFamily: "open-sans-bold",
     fontSize: 18,
+  },
+  quesview:{
+    flexDirection: "row",
+    justifyContent: 'flex-start',
   },
   listItem: {
     backgroundColor: "#d9f9b1",
@@ -152,7 +175,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     shadowColor: "#000",
     borderWidth: 1,
-    padding: 10,
+    padding: 15,
   },
   bannerview: {
     marginVertical: 10,
