@@ -2,15 +2,16 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import TopicCategoriesScreen from "../Screens/TopicCategoriesScreen";
 import TopicDetailScreen from "../Screens/TopicDetailScreen";
-import LandingScreen from "../Screens/LandingScreen";
+//import LandingScreen from "../Screens/LandingScreen";
+import { Platform } from "react-native";
 
 const TopicsNavigator = createStackNavigator({
-  WELCOME: LandingScreen,
+ // WELCOME: LandingScreen,
   CATEGORY: {
     screen: TopicCategoriesScreen,
     navigationOptions: {
       title: "CATEGORY",
-      headerLeft: null,
+      //headerLeft: null,
       headerTitleStyle: {
         fontWeight: "bold",
         fontSize: 25,
@@ -23,7 +24,7 @@ const TopicsNavigator = createStackNavigator({
       title: "INTERVIEW QUESTIONS",
       headerTitleStyle: {
         fontWeight: "bold",
-        fontSize: 25,
+        fontSize: (Platform.OS === 'ios') ? 21 : 25,
       },
     },
   },
