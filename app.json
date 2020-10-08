@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "WebDev Interview Questions",
+    "description":"An App with Interview Questions on web development.It includes topics like Reactjs,Css,Javascript,Html.",
     "slug": "WebDev-Interview-Questions",
     "privacy":"public",
     "platforms":[
@@ -22,12 +23,16 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.quick_interview.web_dev_questions",
+      "buildNumber": "1.0.0",
       "supportsTablet": true,
       "config": {
        "googleMobileAdsAppId": "ca-app-pub-8829581300632627~3631470745" 
      }
     },
     "android": {
+      "package":"com.quick_interview.web_dev_questions",
+      "versionCode": 1,
      "adaptiveIcon":{
        "foregroundImage":"./assets/places-adaptive.png",
        "backgroundColor":"#171717"
